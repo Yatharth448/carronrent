@@ -1,0 +1,22 @@
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+  }
+  
+  .hero-container2 {
+    background: url('/public/images/img-10.png') center center/cover no-repeat;
+    /* background: linear-gradient(90deg, rgb(253, 253, 253) 0%, rgb(253, 253, 253) 100%); */
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); */
+    object-fit: contain;
+  }
+  
+  

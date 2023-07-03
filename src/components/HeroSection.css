@@ -1,0 +1,206 @@
+video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+.hero-container {
+  /* background: url('/public/images/img-home.jpg') center center/cover no-repeat; */
+  background: linear-gradient(90deg, rgb(253, 253, 253) 0%, rgb(253, 253, 253) 100%);
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); */
+  object-fit: contain;
+}
+
+.hero-container > h1 {
+  color: rgb(0, 0, 0);
+  font-size: 100px;
+  margin-top: -50px;
+}
+
+.hero-container > p {
+  margin-top: 8px;
+  color: rgb(0, 0, 0);
+  font-size: 32px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.hero-btns {
+  margin-top: 32px;
+}
+.top-one {
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 500px; */
+  /* right: 20; */
+  position: fixed;
+  /* position: sticky;  */
+  /* top: 20; */
+  z-index: 999;
+  width : 100% ;
+  color : '#000000';
+}
+.email-container {
+  width : 98% ;
+  display: inline-flex;
+  justify-content:flex-end;
+
+}
+.email-img {
+  margin-top: 10px;
+}
+.blink-top{
+  
+  /* animation: blinker 0.9s linear infinite; */
+  
+  color: #1c87c9;
+  /* width : 98% ; */
+  /* margin-top: 10px; */
+  /* height: 50px; */
+  background-color: #fff;
+  margin-right: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center 
+}
+.blink{
+  
+  /* animation: blinker 0.9s linear infinite; */
+  
+  color: #1c87c9;
+  /* width : 98% ; */
+  /* margin-top: 10px; */
+  /* height: 50px; */
+  /* margin-right: 300px; */
+  font-size: 15px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: end;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.hero-btns .btn {
+  margin: 6px;
+}
+
+.fa-play-circle {
+  margin-left: 4px;
+}
+.hero-card {
+  width: 40%;
+  height: 220px;
+  background-color: #fff;
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  display: flex;
+  margin-top:20px;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); */
+  object-fit: contain;
+}
+.hero-card > p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+.hero-card-search-area {
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* justify-content: 'space-between'; */
+  margin-top: 5px;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+  /* object-fit: contain; */
+}
+.hero-card-btn {
+
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: transparent;
+  color: rgb(75, 75, 75);
+  padding: 8px 20px;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease-out;
+}
+@media screen and (max-width: 960px) {
+  .hero-container > h1 {
+    font-size: 70px;
+    /* margin-top: -100px; */
+  }
+
+  .hero-card {
+    width: 50%;
+    height:200px;
+    background-color: #fff;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    display: flex;
+    margin-top:20px;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); */
+    object-fit: contain;
+  }
+  .hero-card-search-area {
+    display: block !important;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* justify-content: 'space-between'; */
+    align-items: center;
+    /* justify-content: space-between; */
+   row-gap: 20px;
+    object-fit: contain;
+  }
+  .hero-card-btn {
+
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: transparent;
+    color: rgb(75, 75, 75);
+    padding: 8px 20px;
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease-out;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-container > h1 {
+    font-size: 50px;
+     margin-top: 20px; 
+  }
+
+  .hero-container > p {
+    font-size: 30px;
+  }
+
+  .btn-mobile {
+    display: block;
+    text-decoration: none;
+  }
+
+  .btn {
+    width: 100%;
+  }
+  
+}
